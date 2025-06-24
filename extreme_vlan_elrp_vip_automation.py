@@ -9,7 +9,7 @@ vlan_ip = input ("Do you have ip on vlan?(yes/no)").strip().lower()
 
 if  vlan_ip == "yes":
     while True:
-     vlan_ip = input("Enter your ip & Subnet mask for vlan: ") 
+     vlan_ip = input("Enter your ip for vlan: ") 
      vlan_subnet = input ("Enter your Subnet mask for vlan: ")  
      vlan_ip_cmd += f"configure vlan_{vlan} ipaddress {vlan_ip} {vlan_subnet}"
      break
